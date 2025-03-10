@@ -1,9 +1,12 @@
 .wrapper {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 header {
     display: flex;
     padding: 5vw;
+    background-color: deepskyblue;
 }
 .picture {
     max-width: 40vw;
@@ -17,4 +20,27 @@ header {
 .socials {
     font-size: 200%;
     text-align: end;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.screenshot{
+    background-color: red;
+}
+.project-name{
+    display: flex;
+}
+footer{
+    display: flex;
+    background-color: deepskyblue;
+    padding: 5vw;
+}
+.phone {
+    display: flex;
 }
